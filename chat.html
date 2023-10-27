@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="ru">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <title>MeetMISIS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="text__header"><a href="./personalAcc.html">Личный кабинет</a></div>
+        <div class="text__header"><a href="./find.html">Поиск</a></div>
+        <div class="lang">
+            <p class="text__lang">Язык:</p> 
+            <select class="select__header">
+                <option class="option__header" label="Русский" value="1" selected><a href="#">Русский</a></option>
+                <option class="option__header"><a href="#">English</a></option>
+            </select>
+        </div>
+    </header>
+
+    <section class="section">
+
+        
+
+        <div class='chat'>
+            <div class='chat-messages'>
+                <div class='chat-messages__content' id='messages'></div>
+            </div>
+
+            <div class='chat-input'>
+                <form method='post' id='chat-form'>
+                    <input type='text' id='inputMessage' class='chat-form__input' placeholder='Введите сообщение'> 
+                    <button type='button' id="btnSend" class='chat-form__submit'>Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        
+
+        
+
+        <div class="contacts"></div>
+
+    </section>
+    
+
+    <script src="./js/chat.js"></script>
+</body>
+</html>

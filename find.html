@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="ru">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/find.css">
+    <title>MeetMISIS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="text__header"><a href="./personalAcc.html">Личный кабинет</a></div>
+        <div class="text__header"><a href="./chat.html">Чаты</a></div>
+        <div class="lang">
+            <p class="text__lang">Язык:</p> 
+            <select class="select__header">
+                <option class="option__header" label="Русский" value="1" selected><a href="#">Русский</a></option>
+                <option class="option__header"><a href="#">English</a></option>
+            </select>
+        </div>
+    </header>
+
+    <section class="section" translate="yes">
+        <div class="left-side">
+            <p class="find-text">Поисковая страница</p>
+            <div class="filters">
+                <div class="filter educ">
+                    <p class="text-filter">Обучение</p><div class="arrow arrow-bottom"></div>
+                </div>
+                <div class="filter clubs">
+                    <p class="text-filter">Участие в клубах МИСИС</p><div class="arrow arrow-bottom"></div>
+                </div>
+                <div class="filter sports">
+                    <p class="text-filter">Спорт в МИСИС</p><div class="arrow arrow-bottom"></div>
+                </div>
+                <div class="filter goalFind">
+                    <p class="text-filter">Цель поиска:</p>
+
+                    <div class="choose-block">
+                        <div class="choose-educ">
+                            <p class="main-text-choose">Учеба</p>
+                            <form action="" method="">
+                                <input type="checkbox" name="help" id="help">
+                                <label for="help">Помогу с предметом</label>
+                            </form>
+                            <form action="" method="">
+                                <input type="checkbox" name="needhelp" id="needHelp">
+                                <label for="needHelp">Нужна помощь с предметом</label>
+                            </form>
+                            <form action="" method="">
+                                <input type="checkbox" name="gym" id="goToGYM">
+                                <label for="goToGYM">Компания на физкультуру</label>
+                            </form>
+                            <form action="" method="">
+                                <input type="checkbox" name="train" id="trainee">
+                                <label for="trainee">Ботать</label>
+                            </form>
+                        </div>
+                        <div class="choose-commune">
+                            <p class="main-text-choose">Общение</p>
+                            <form action="" method="">
+                                <input type="checkbox" name="walking" id="walk">
+                                <label for="walk">Прогулка</label>
+                            </form>
+                            <form action="" method="">
+                                <input type="checkbox" name="cafe" id="goToCafe">
+                                <label for="goToCafe">Сходить в кафе</label>
+                            </form>
+                        
+                        </div>
+                        <div class="choose-activity">
+                            <p class="main-text-choose">Развлечения</p>
+                            <form action="" method="">
+                                <input type="checkbox" name="cinema" id="goToCinema">
+                                <label for="goToCinema">Поход в кино</label>
+                            </form>
+                            <form action="" method="">
+                                <input type="checkbox" name="boardgame" id="boardGames">
+                                <label for="boardGames">Настольные игры</label>
+                            </form>
+                            <form action="" method="">
+                                <input type="checkbox" name="compgame" id="compGames">
+                                <label for="compGames">Компьютерные игры</label>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="btns">
+                <button type="submit" class="button btn-only"><a href="#">Посик по интересам</a></button>
+                <button type="submit" class="button btn-random"><a href="#">Рандомайзер</a></button>
+            </div>
+
+            <div class="loading">
+                <img class="logo-load" src="./images/loading.svg" alt="loading...">
+
+                <div class="block__right-side hidden">
+                    <div class="inf__block">
+                        <div class="avatar"></div>
+                        <form class="form">
+                            <div class="item__inf">
+                                <label class="item-label__inf" for="userNickname">Ник:</label>
+                                <input readonly class="item-input__inf" type="text" name="nickname" id="userNickname">
+                            </div>
+                            <div class="item__inf">
+                                <label class="item-label__inf" for="userInstitut">Институт:</label>
+                                <input readonly class="item-input__inf" type="text" name="institut" id="userInstitut">
+                            </div>
+                            <div class="item__inf">
+                                <label class="item-label__inf" for="userCourse">Курс:</label>
+                                <input readonly class="item-input__inf" type="text" name="course" id="userCourse">
+                            </div>
+                            <div class="item__inf">
+                                <label class="item-label__inf" for="userFaculty">Напрвление:</label>
+                                <input readonly class="item-input__inf " type="text" name="faculty" id="userFaculty">
+                            </div>
+                        </form>
+                    </div>
+    
+                    <div class="tags__block">
+                        <a href="">#хоббихорсинг</a> 
+                        <a href="">#матан </a>
+                        <a href="">#дизайн</a> 
+                        <a href="">#настолки</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btns">
+                <button type="submit" class="button button-sub hidden"><a href="./chat.html">Написать</a></button>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <script src="./js/find.js"></script>
+</body>
+</html>
